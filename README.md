@@ -38,5 +38,5 @@ Capturing document similarity with Jaccard measure, shingling, cost of naive ded
 Banding technique to reduce quadratic complexity for all pairs comparison, locality sensitive hashing with simhash and relations to optimization.
 1. Main reading: Chapter 3 and 4 of `MMDS`
 2. Additional reading
-  1. Similarity Estimation Techniques from Rounding Algorithms. Moses S Charikar.
-  2. References around above paper.
+   1. Similarity Estimation Techniques from Rounding Algorithms. Moses S Charikar.
+   2. References around above paper.
