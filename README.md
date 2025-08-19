@@ -24,13 +24,19 @@ Understanding time and cost of various design choices, necessity of wide-area an
 1. Main reading material: CAP Twelve Years Later: How the "Rules" Have Changed
 1. Additional reading:
    1. Jeff's talks on Google's early evolution: [here](https://static.googleusercontent.com/media/research.google.com/en//people/jeff/stanford-295-talk.pdf) and [here](https://static.googleusercontent.com/media/research.google.com/en//people/jeff/Stanford-DL-Nov-2010.pdf).
-## 3. Data store
+## 4. Data store
 Discusses the challenges with storing and accessing large volume of data including latencies and costs across disks (HDDs and SSDs). The necessity of clever indexing, trade-offs with B-Trees and LMS-Trees.
 1. Main reading material: Section 3.6 `SEIRP` and Chapter 3 of `DDIA`
 1. Additional references
    1. [The ubiquitous B-Tree](https://carlosproal.com/ir/papers/p121-comer.pdf)
    1. [The Log-structured Merge-tree](https://www.cs.umb.edu/~poneil/lsmtree.pdf)
    1. [Bigtable: A Distributed Storage System for Structured Data](https://static.googleusercontent.com/media/research.google.com/en//archive/bigtable-osdi06.pdf)
-## 4. Deduplication
+## 5. Deduplication - minhash
 Capturing document similarity with Jaccard measure, shingling, cost of naive deduplication at scale, its estimator based on minhash-signatures.
 1. Main reading: Section 3.7 `SEIRP` and Chapter 3 of `MMDS`
+## 6. Deduplication - LSH
+Banding technique to reduce quadratic complexity for all pairs comparison, locality sensitive hashing with simhash and relations to optimization.
+1. Main reading: Chapter 3 and 4 of `MMDS`
+2. Additional reading
+  1. Similarity Estimation Techniques from Rounding Algorithms. Moses S Charikar.
+  2. References around above paper.
