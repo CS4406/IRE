@@ -38,5 +38,9 @@ Capturing document similarity with Jaccard measure, shingling, cost of naive ded
 Banding technique to reduce quadratic complexity for all pairs comparison, locality sensitive hashing with simhash and relations to optimization.
 1. Main reading: Chapter 3 and 4 of `MMDS`
 2. Additional reading
+   1. On the resemblance and containment of documents. Broder, Andrei Z.
    1. Similarity Estimation Techniques from Rounding Algorithms. Moses S Charikar.
-   2. References around above paper.
+   2. Detecting Near-Duplicates for Web Crawling. Gurmeet Singh Manku, Arvind Jain, and Anish Das Sarma.
+## 7. Text processing
+Pre-processing of crawled text including extraction and link analysis to prepare it for indexing.
+1. Main reading: Chapter 4 `SEIRP`
