@@ -57,3 +57,6 @@ The exact choice of compression algorithm depends on the specific IO and process
 ## 11. Query processing
 The term-at-a-time and document-at-a-time processing of queries. Various optimizations like list-skipping, conjuctive processing, dynamically/statically setting thresholds $`\tau`$ for chopping out documents/postings that are unlikely to score high enough to be in top-$`k`$, and the importance of ordering. A note on structured queries, distributed evaluation and caching.
 1. Main reading: Chapter 5 `SEIRP`
+## 12. Query reformulation
+Handling misspelings and alternative query formulations that do not appear in documents using lexical, co-occurance and (pseudo) relevance feedback information. Creating artificial documents with words to augment against terms for expansion. Understanding the properties of metrics like Dice to rank candidate words for expansion. Disambiguating context using additional information for query reformulation and personalization.
+1. Main reading: Chapter 6 `SEIRP`.
