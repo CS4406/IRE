@@ -47,7 +47,7 @@ Query observes the true user intent through an noisy channel that could corrupt 
 1. Main reading: Chapter 4 `SEIRP`
 ## 8. Link analysis
 Among the many features that determine the relevance of a document to a query (most of which could be context specific) there are some generic ones like quality of the webpage. High quality pages are reliable sources of information while poor ones are either outdated copies, misleading sites or spam/click-baits. PageRank is one of the earliest algorithms with similar ones like HITS invented to determine the quality of a page. We discuss graph structure of the web, applying PageRank to determine page quality, and distributed implementation amenable for MapReduce.
-1. Main reading Section 4.5 of `SEIRP` and Chapter 5 of `MMDS`.
+1. Main reading: Section 4.5 of `SEIRP` and Chapter 5 of `MMDS`.
 ## 9. Indexing
 Term-doc incidence matrix and storing it as inverted-index with postings list for each term. Supporting various queries (OR, AND, NOT, PHRASE, INFIELD) on the index using running merge operation on the retrieved postings list. We also looked at how a two 1MB posting lists could take about 0.05s to to read from the disk while it only takes 0.001s (50x faster) to run a merge operation for them on a 5GHz processor. Correposndingly, we could process much more data if only we could improve the IO rate even if at the cost of compute speeds and compression help us leverage this trade-off.
 1. Main reading: Chapter 5 `SEIRP`
@@ -58,5 +58,8 @@ The exact choice of compression algorithm depends on the specific IO and process
 The term-at-a-time and document-at-a-time processing of queries. Various optimizations like list-skipping, conjuctive processing, dynamically/statically setting thresholds $`\tau`$ for chopping out documents/postings that are unlikely to score high enough to be in top-$`k`$, and the importance of ordering. A note on structured queries, distributed evaluation and caching.
 1. Main reading: Chapter 5 `SEIRP`
 ## 12. Query reformulation
-Handling misspelings and alternative query formulations that do not appear in documents using lexical, co-occurance and (pseudo) relevance feedback information. Creating artificial documents with words to augment against terms for expansion. Understanding the properties of metrics like Dice to rank candidate words for expansion. Disambiguating context using additional information for query reformulation and personalization.
+Handling misspelings and alternative query formulations that do not appear in documents using lexical, co-occurance and (pseudo) relevance feedback information (Rocchio model). Creating artificial documents with words to augment against terms for expansion. Understanding the properties of metrics like Dice to rank candidate words for expansion. Disambiguating context using additional information for query reformulation and personalization.
 1. Main reading: Chapter 6 `SEIRP`.
+## 13. Retrieval models
+Challenges with binary retrieval with term occurance, extension to vector space model and (cosine) similarity using term and inverse-document frequencies. Probablistic ranking principle and query likelihood under the binary independece model, and the BM25 ranking algorithm.
+1. Main reading: Chapter 7 `SEIRP`
