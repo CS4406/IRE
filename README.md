@@ -1,4 +1,4 @@
-# [WIP] Information Rretrieval and Extraction
+# [WIP] Information Retrieval and Extraction
 
 The course initially covers various methods to crawl, index and query text documents for information. 
 It introduces the challenges with designing and building such a system, various techniques from literature and the involved trade-offs.
@@ -63,3 +63,5 @@ Handling misspelings and alternative query formulations that do not appear in do
 ## 13. Retrieval models
 Challenges with binary retrieval with term occurance, extension to vector space model and (cosine) similarity using term and inverse-document frequencies. Probablistic ranking principle and query likelihood under the binary independece model, and the BM25 ranking algorithm.
 1. Main reading: Chapter 7 `SEIRP`
+## 14. Modelling ranking
+We looking into the broader aspects of how query likelihood is but one way of generatively modelling ranking and one could alternatively use document likelihood and pool them with appropriate priors. Understand how to estimate the likelihoods with frequency statistics very similar to langauge models that used smoothing/discounting techniques. Further discussed how discrimative modelling was an alternative and some trade-offs in choosing from the two approaches. And a bit of detour on how ranking problems appear in different fields with very different requirements.
