@@ -60,8 +60,18 @@ The term-at-a-time and document-at-a-time processing of queries. Various optimiz
 ## 12. Query reformulation
 Handling misspelings and alternative query formulations that do not appear in documents using lexical, co-occurance and (pseudo) relevance feedback information (Rocchio model). Creating artificial documents with words to augment against terms for expansion. Understanding the properties of metrics like Dice to rank candidate words for expansion. Disambiguating context using additional information for query reformulation and personalization.
 1. Main reading: Chapter 6 `SEIRP`.
-## 13. Retrieval models
+## 13. Ranking models: query likelihood
 Challenges with binary retrieval with term occurance, extension to vector space model and (cosine) similarity using term and inverse-document frequencies. Probablistic ranking principle and query likelihood under the binary independece model, and the BM25 ranking algorithm.
 1. Main reading: Chapter 7 `SEIRP`
-## 14. Modelling ranking
+## 14. Ranking models: document likelihood
 We looking into the broader aspects of how query likelihood is but one way of generatively modelling ranking and one could alternatively use document likelihood and pool them with appropriate priors. Understand how to estimate the likelihoods with frequency statistics very similar to langauge models that used smoothing/discounting techniques. Further discussed how discrimative modelling was an alternative and some trade-offs in choosing from the two approaches. And a bit of detour on how ranking problems appear in different fields with very different requirements.
+1. Main reading: Chapter 7 `SEIRP`
+## 15. Ranking models: machine learning overview
+Formulating the ranking problem to leverage machine learning agorithms to learn the mapping. General introduction to machine learning with risk minimization framework with various loss functions leading to different algorithms. Discussion on generalization error, understanding it in terms of irreducible, estimation and function-class errors, estimating it with train-test split, etc.
+
+## Upcoming lectures
+Next lectures will be planned to cover the following broad topics:
+1. Evaluation of search engines; using references-vs-judgements, human-vs-LLM judges, challenges with subjectivity, bias and its correction.
+2. Retrieval system lifecycle; with various stages in the retrieve, filter and rank pipeline and the importance of A/B-testing.
+3. Specific applications of retrieval systems; general web-search, product search, advertising (auctions). traffic patterns (heavy-hitting head traffic and behavioral/count-based features, large/cold tail and semantic search including embeddings/approximate-nearest neighbors and two-tower models).
+4. Modern retrieval systems; Alternative filtering (collaborative, hybrid, graph/knowledge-base), retrieval-augmented generation
